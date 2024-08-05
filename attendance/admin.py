@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Student, Attendance
+from .models import Student, Attendance, Teacher
 from .forms import AttendanceForm
 from django.utils import timezone
 
@@ -33,3 +33,4 @@ class AttendanceAdmin(admin.ModelAdmin):
 
 admin.site.register(Student, StudentAdmin)
 admin.site.register(Attendance, AttendanceAdmin)
+admin.site.register(Teacher)
